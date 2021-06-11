@@ -150,3 +150,22 @@ body {
 .profile-container p {
   margin: 20px 34px;
 }
+
+/* ////////////////////////////////////////////////////////////////// responsive //////////////////////////////////// */
+
+@media screen and (max-width: 466px) {
+  .contact-card {
+    width: 220px;
+    position: relative;
+    left: -62px;
+  }
+
+  .loader {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sort-tags {
+    right: 96px;
+  }
+}

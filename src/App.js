@@ -13,9 +13,13 @@ function App() {
   // hook for loading screen 
   const [ isloading, setloading ] = useState(false);
 
+
+  // hooks for sorted data 
   const [ data, setData] = useState([]);
 
+  // hooks for tracking the sorted type
   const [ sortType, setSortType] = useState("id");
+
 
   // useEffect run only once to get the data 
   useEffect(() => {
@@ -33,7 +37,7 @@ function App() {
   },[])
 
   
-
+  // useEffect for sorting the data
   useEffect(() => {
     function sortarray(sortType) {
       const first_name = "first_name";
